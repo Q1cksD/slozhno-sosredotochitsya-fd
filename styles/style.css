@@ -1,5 +1,132 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-attachment: fixed;
+  padding: 10px;
 }
+
+.header {
+  min-block-size: 100vh;
+}
+
+.decorated-zone {
+  color: var(--nav-color);
+  border-top-left: 1px solid red;
+}
+
+.header__icon {
+
+}
+
+.header__theme-menu {
+
+}
+
+.header__theme-menu-list {
+
+}
+
+.header__theme-menu-item {
+
+}
+
+.header__theme-menu-button {
+
+}
+
+.header__theme-menu-button_type_light {
+
+}
+
+.header__theme-menu-button_active {
+
+}
+
+.header__theme-menu-button_type_auto {
+
+}
+
+.header__theme-menu-button_type_dark {
+
+}
+
+.header-hero {
+  
+}
+
+.header-hero__title {
+
+}
+
+.header-hero__description {
+
+}
+
+.content {
+
+}
+
+.section {
+
+}
+
+.why {
+
+}
+
+.section__title {
+
+}
+
+.section-lists {
+
+}
+
+.section-lists__item {
+
+}
+
+.section-lists__title {
+
+}
+
+.section-lists__text {
+
+}
+
+.what {
+
+}
+
+.how {
+
+}
+
+.section-list__title {
+
+}
+
+.gallery {
+
+}
+
+.section__images {
+
+}
+
+.section__images img {
+  max-width: 100%;
+}
+
+.footer {
+
+}
+
+.footer__banner {
+
+}
+
