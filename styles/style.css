@@ -3,15 +3,19 @@
 .page {
   font-family: var(--main-font-family);
   font-size: var(--main-font-size);
+  background-color: var(--main-bg-color);
   background-image: var(--bg-image);
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 0 10px;
 }
 
 .header {
-  min-block-size: 100svh;
+  min-block-size: 100vh;
   display: grid;
+  grid-template-rows: 1fr 2fr;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -68,7 +72,8 @@
 }
 
 .header__theme-menu {
-
+  justify-self: end;
+  align-self: center;
 }
 
 .header__theme-menu-list {
@@ -80,7 +85,9 @@
 }
 
 .header__theme-menu-button {
-
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-transform: lowercase;
 }
 
 .header__theme-menu-button_type_light {
@@ -88,7 +95,7 @@
 }
 
 .header__theme-menu-button_active {
-
+  border: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-button_type_auto {
@@ -104,47 +111,72 @@
 }
 
 .header-hero__title {
-
+  font-weight: bold;
+  font-size: var(--header-logo-size);
+  line-height: 83%;
+  color: var(--header-logo-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  padding-bottom: 55px;
 }
 
 .header-hero__description {
-
+  font-weight: 700;
+  color: var(--main-heading-color);
+  background-color: var(--heading-bg-color);
 }
 
 .content {
-
+  display: grid;
+  gap: 50px;
 }
 
 .section {
+  display: grid;
+  gap: var(--section-gap);
+}
 
+.section.gallery {
+  gap: 10px;
 }
 
 .why {
-
+  margin-top: 40px;
 }
 
 .section__title {
-
+  font-size: var(--main-font-size);
+  color: var(--section-heading-color);
+  font-weight: bold;
 }
 
 .section-lists {
-
+  display: grid;
+  gap: var(--section-gap);
 }
 
 .section-lists__item {
+  display: grid;
+  gap: var(--list-gap);
+}
 
+.section-lists__first-line {
+  color: var(--main-heading-color);
+  background-color: var(--heading-bg-color);
 }
 
 .section-lists__title {
-
+  font-size: var(--main-font-size);
+  color: var(--main-heading-color);
+  background-color: var(--heading-bg-color);
+  font-weight: bold;
 }
 
 .section-lists__text {
-
+  color: var(--main-text-color);
 }
 
 .what {
-
+  margin-top: 50px;
 }
 
 .how {
@@ -160,7 +192,8 @@
 }
 
 .section__images {
-
+  display: grid;
+  gap: var(--list-gap);
 }
 
 .section__images img {

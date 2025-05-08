@@ -12,11 +12,14 @@
   --main-bg-color: #000028;
   --main-heading-color: #000028;
   --section-heading-color: #FF0070;
+  --heading-bg-color:  #FF0070;
   --header-logo-color: #DB00FF;
   --footer-logo-color: #DB00FF;
   --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --main-gap: 10px;
+  --list-gap: 10px;
+  --section-gap: 20px;
+  --content-gap: 50px;
   --main-font-size: 18px;
   --main-line-height: 130%;
   
