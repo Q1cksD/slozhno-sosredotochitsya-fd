@@ -110,7 +110,7 @@
   
 }
 
-.header-hero__title {
+.header-hero__logo {
   font-weight: bold;
   font-size: var(--header-logo-size);
   line-height: 83%;
@@ -201,10 +201,17 @@
 }
 
 .footer {
-
+  block-size: 100vh;
+  display: grid;
 }
 
-.footer__banner {
-
+.footer__logo {
+  font-weight: bold;
+  font-size: var(--footer-logo-size);
+  line-height: 83%;
+  color: #db00ff;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  margin: auto 0;
+  text-align: center;
 }
 
