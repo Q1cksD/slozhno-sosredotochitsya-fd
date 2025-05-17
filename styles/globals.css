@@ -40,3 +40,17 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+.page .text-link {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.page .text-link:hover {
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.page .text-link:focus-visible {
+  outline: none;
+  border: 1px solid var(--main-text-focus);
+}

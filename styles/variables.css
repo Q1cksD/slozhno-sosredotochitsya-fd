@@ -1,12 +1,10 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
   --bg-image: url(..//images/cover-image-dark.png);
   --main-font-family: 'IBM Plex Mono', monospace;
   --main-text-color: #F1B2CE;
+  --main-text-focus: #F1B2CE;
   --nav-color: #FF0070;
+  --nav-focus: #FF0070;
   --nav-color-hover: rgba(255, 0, 112, 0.4);
   --accent-color: #FF0070;
   --main-bg-color: #000028;
@@ -15,16 +13,11 @@
   --heading-bg-color:  #FF0070;
   --header-logo-color: #DB00FF;
   --footer-logo-color: #DB00FF;
-  --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --mobile-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --desktop-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --list-gap: 10px;
   --section-gap: 20px;
   --content-gap: 50px;
   --main-font-size: 18px;
   --main-line-height: 130%;
-  
-
-
-  
-  
 }
