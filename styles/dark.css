@@ -1,6 +1,7 @@
 :root.theme-dark {
-  --bg-image: url(..//images/cover-image-dark.png);
+  --bg-image: url(../images/cover-image-dark.png);
   --main-text-color: #F1B2CE;
+  --main-text-focus: #F1B2CE;
   --nav-color: #FF0070;
   --nav-focus: #FF0070;
   --nav-color-hover: rgba(255, 0, 112, 0.4);

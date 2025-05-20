@@ -10,8 +10,23 @@
   padding: 0 10px;
 }
 
+.page .text-link {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.page .text-link:hover {
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.page .text-link:focus-visible {
+  outline: none;
+  border: 1px solid var(--main-text-focus);
+}
+
 .header {
-  min-block-size: 100vh;
+  min-block-size: 668px;
+  block-size: 100vh;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   grid-template-columns: 1fr 1fr;
@@ -157,6 +172,8 @@
 
 .section-lists {
   display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-auto-rows: min-content;
   gap: var(--section-gap);
 }
 
@@ -166,7 +183,7 @@
   gap: var(--list-gap);
 }
 
-.section-lists__first-line {
+.section-lists__begining {
   color: var(--main-heading-color);
   background-color: var(--heading-bg-color);
 }
@@ -177,6 +194,12 @@
   background-color: var(--heading-bg-color);
   font-weight: bold;
   line-height: var(--main-line-height);
+  max-height: fit-content;
+}
+
+.section-group {
+  display: grid;
+  gap: var(--section-gap);
 }
 
 .section-lists__text {
@@ -191,10 +214,12 @@
 
 .section__images img {
   inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
 }
 
 .footer {
+  min-block-size: 668px;
   block-size: 100vh;
   display: grid;
 }
@@ -204,7 +229,7 @@
   font-size: var(--mobile-logo-size);
   line-height: 83%;
   color: var(--footer-logo-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   margin: auto 0;
   text-align: center;
 }
@@ -225,7 +250,7 @@
   }
 
   .how {
-    column-gap: 26px;
+    column-gap: var(--section-gap);
   }
 
   .how .section__title {
@@ -256,12 +281,13 @@
   .what .section-lists {
     grid-template-columns: repeat(3, 1fr);
     grid-column: 1/3;
+    gap: 0;
+    column-gap: var(--section-gap);
   }
 
   .how {
-    column-gap: 20px;
+    column-gap: var(--list-gap);
   }
-
 }
 
 
@@ -305,18 +331,7 @@
 
   .how {
     grid-template-columns: 1fr 2fr;
-  }
-
-  .how .section__title {
-    grid-row: 1/3;
-  }
-
-  .how .section-lists {
-    grid-column: 2/4;
-  }
-
-  .how>.section-lists__title {
-    grid-column: 2/4;
+    align-items: start;
   }
 
   .section.gallery {
@@ -327,12 +342,6 @@
     grid: repeat(3, auto)/repeat(3, auto);
     grid-auto-flow: dense;
     gap: 20px;
-  }
-
-  .section__images img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
   }
 
   .section__images img:nth-child(1) {
