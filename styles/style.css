@@ -186,6 +186,7 @@
 .section-lists__begining {
   color: var(--main-heading-color);
   background-color: var(--heading-bg-color);
+  font-weight: normal;
 }
 
 .section-lists__title {
